@@ -8,18 +8,16 @@
 }
 
 .header-title {
-    width: 15%;
-    color: #FFFFFF;
-    padding: 0;
-    margin: 0;
-    color: #FFFFFF;
+    width: 20%;
+    height: 25px;
+    background: url(https://imgd.aeplcdn.com/0x0/cw/static/sprites/cwsprite.png?201703071717247120) no-repeat;
 }
 
 .nav-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: left;
+    width: 72%;
 }
 
 .nav-tablet-group {
@@ -36,6 +34,7 @@
 .nav-tablet > span{
     color: #FFFFFF;
     cursor: pointer;
+    padding: 2px;
 }
 
 .nav-tablet:hover {
@@ -45,6 +44,7 @@
 .nav-tablet:hover span{
     color: #154057;
 }
+
 .nav-tablet:hover .nav-main-nested-panel{
     display: flex;
 }
@@ -57,7 +57,7 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     top: 40px;
-    left: 0;
+    left: 0;    
 }
 .nav-main-nested-panel a{
     text-decoration: none;
@@ -70,15 +70,31 @@
 }
 .nav-nested-col1{
     width: 200px;
-    padding: 5px;
+    /* background-color: lightseagreen; */
 }
 
 .nav-nested-col2{
     width: 200px;
-    padding: 5px;
+    /* background-color: pink; */
 }
 
 .nav-nested-col3{
     width: 200px;
-    padding: 5px;
+}
+
+.search-bar{
+    width: 300px;
+    padding-left: 15%;
+}
+
+.search-bar input{
+    width: 100%;
+    padding: 10px 9px 9px;
+    border: 1px solid #ccc;
+    outline: 0;
+}
+
+.header-right-section span{
+    color: #FFFFFF;
+    padding: 2px;
 }
