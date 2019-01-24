@@ -1,5 +1,5 @@
 .main-banner{
-    background: #000000 url(https://imgd.aeplcdn.com/0x0/n/wwb0v5a_1457102.jpg) no-repeat center bottom;
+    background: #000000 url(https://imgd.aeplcdn.com/0x0/n/7i8bv5a_1457171.jpg) no-repeat center bottom;
     background-size: cover;
     height: 580px;
     position: relative;
@@ -8,12 +8,11 @@
 }
 .banner-search{
     width: 60%;
-    /* background-color: grey; */
+    /* background-color: ivory; */
     text-align: center;
     position: absolute;
-    top: 55%;
+    /* top: 10%; */
     left: 20%;
-    height: 20%;
 }
 .banner-search h1{
     font-weight: 400;
@@ -24,8 +23,64 @@
     display: flex;
     padding: 0;
     margin: 0;
+    justify-content: center;
 }
 .search-tab{
     list-style: none;
-    padding: 5px;
+    padding: 8px 25px;
+    outline: 1px solid white;
+}
+.search-tab a{
+    text-decoration: none;
+    color: ivory;
+}
+.search-tab:hover{
+    background-color: ivory;
+}
+.search-tab:hover a{
+    color: black;
+}
+.banner-input{
+    display: flex;
+    flex-direction: column;
+    /* background-color: grey; */
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 2%;
+}
+.banner-input input{
+    width: 55%;
+    padding: 8px 10px;
+    height: 20px;
+    line-height: 1.5;
+}
+.banner-input button{
+    background-color: #f85649;
+    padding: 9px 20px 10px;
+    border-radius: 0 2px 2px 0;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid transparent;
+    outline: 0;
+    white-space: nowrap;
+}
+.banner-link{
+    /* background-color: black; */
+    width: 100%;
+    padding-top: 5px;
+}
+.banner-link a{
+    text-decoration: none;
+    color: ivory;
+    font-size: 14px;
+}
+.banner-link a:hover{
+    text-decoration: underline;
+}
+.banner-link-righttag{
+    padding-left: 18%;
 }
