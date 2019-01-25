@@ -1,0 +1,34 @@
+<div ng2-carouselamos [width]="900" 
+[items]="listOfItems" [$item]="itemTemplate" 
+[$prev]="prevTemplate" [$next]="nextTemplate"
+(onSelectedItem)="selectedItem = $event.item; selectedIndex = $event.index">
+</div>
+
+<ng-template #prevTemplate>
+  <span class="carous-left">
+      <span class="carous-prev"></span>
+  </span>
+  
+</ng-template>
+
+<ng-template #nextTemplate>
+  <span class="carous-right">
+      <span class="carous-next"></span>
+  </span>
+</ng-template>
+
+<ng-template let-item let-i="index" #itemTemplate>
+  <mat-card class="example-card" style="margin: 20px; vertical-align: middle;">
+    <mat-card-header>
+    </mat-card-header>
+    <img mat-card-image src="https://imgd.aeplcdn.com/310x174/cw/ec/26918/Mahindra-XUV300-Exterior-144700.jpg?wm=0&q=85"
+      alt="Upcoming cars">
+    <mat-card-content>
+      <a href="#" class="card-title">Mahindra XUV300</a>
+      <span class="card-price">₹ 8 - 12 Lakhs</span>
+      <span class="card-price-text">Estimated price</span>
+      <span class="card-date">14th Feb 2019</span>
+      <span class="card-price-text">Expected launch</span>
+    </mat-card-content>
+  </mat-card>
+</ng-template>

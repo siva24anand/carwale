@@ -1,0 +1,82 @@
+.main {
+    background-color: lightcyan;
+    width: 100%;
+}
+
+.example-card {
+    max-width: 400px !important;
+    width: 400px !important;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+.card-title{
+    display: flex;
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+}
+.card-title:hover{
+    text-decoration: underline;
+}
+.card-price{
+    display: flex;
+    font-size: 22px;
+    color: #565a5c;
+    line-height: 1.42857143;
+    padding-top: 10px;
+}
+.card-price-text{
+    display: flex;
+    padding-top: 3px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #82888b;
+}
+.card-date{
+    display: flex;
+    font-size: 18px;
+    color: #565a5c;
+    line-height: 1.42857143;
+    padding-top: 10px;
+}
+.carous-left{
+    border: 1px solid #e6e6e6;
+    background: #fff;
+    position: absolute;
+    top: -30px;
+    z-index: 1;
+    left: 28px;
+}
+.carous-prev{
+    background:url(https://imgd.aeplcdn.com/0x0/cw/static/sprites/cwsprite.png?201703071717247120) no-repeat;
+    background-position: -26px -73px;
+    width: 35px;
+    height: 60px;
+    text-indent: -9999px;
+    padding: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.carous-right{
+    border: 1px solid #e6e6e6;
+    background: #fff;
+    position: absolute;
+    top: -30px;
+    z-index: 1;
+    right: 27px;
+}
+.carous-next{
+    background:url(https://imgd.aeplcdn.com/0x0/cw/static/sprites/cwsprite.png?201703071717247120) no-repeat;
+    background-position: -60px -73px;
+    width: 35px;
+    height: 60px;
+    text-indent: -9999px;
+    padding: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
