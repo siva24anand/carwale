@@ -16,6 +16,12 @@ import { UpcomingComponent } from './components/featured/upcoming/upcoming.compo
 import { PopularComponent } from './components/featured/popular/popular.component';
 import { LaunchedComponent } from './components/featured/launched/launched.component';
 
+//For Http
+import {HttpClientModule} from '@angular/common/http';
+
+//For Service
+import { CarapiconnectService} from './Service/carapiconnect.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,9 +37,10 @@ import { LaunchedComponent } from './components/featured/launched/launched.compo
     BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
-    Ng2CarouselamosModule
+    Ng2CarouselamosModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [CarapiconnectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
