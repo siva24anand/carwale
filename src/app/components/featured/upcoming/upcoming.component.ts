@@ -15,7 +15,11 @@ export class UpcomingComponent implements OnInit {
 
   constructor(private _carapiconnectService: CarapiconnectService) {
     
-     this._carapiconnectService.getCars().subscribe(listOfItemsfromService => this.listOfItems = listOfItemsfromService);
+     //this._carapiconnectService.getCars().subscribe(listOfItemsfromService => this.listOfItems = listOfItemsfromService);
+     this._carapiconnectService.getCars().subscribe((listOfItemsfromService:UpcomingCars[])  => 
+     {
+       this.listOfItems = listOfItemsfromService
+     });
      console.log(this.listOfItems);
   }
 
