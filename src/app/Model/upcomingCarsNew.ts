@@ -3,6 +3,6 @@ export class UpcomingCarsNew {
     public Price: string;
     public LaunchDate: string;
     public ImageURL: string;
-    public type: string;
-    public brand:string;
+    public Type: string;
+    public Brand:string;
 }

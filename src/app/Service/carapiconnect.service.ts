@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpHeaders,} from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
 import {UpcomingCars} from '../Model/UpcomingCars';
 import {UpcomingCarsNew} from '../Model/upcomingCarsNew';
 import { Observable } from 'rxjs';
@@ -11,15 +11,15 @@ import { Observable } from 'rxjs';
 
 export class CarapiconnectService {
 
-private accessPointURL: string ="http://localhost:49345/api/cars";
-private accessPointURL1: string ="http://localhost:49345/api/values";
-upcomingcars: UpcomingCars[];
+private accessPointURL: string ="http://localhost:49345/api/cars/GetUpcomingCars";
+private accessPointURL1: string ="http://localhost:49345/api/cars/GetUpcomingCar";
+//upcomingcars: UpcomingCars[];
 
   constructor(private http: HttpClient) { 
   }
 
   //public getCars():UpcomingCars[]
-  public getCars():Observable<UpcomingCars[]>
+  public getCars()
   {
 
     // this.upcomingcars = 
@@ -28,15 +28,16 @@ upcomingcars: UpcomingCars[];
     // ];
     // return this.upcomingcars;
 
-    var obj = this.http.get<UpcomingCars[]>(this.accessPointURL);
-    var obj1 = this.http.get(this.accessPointURL1);
-
+    //var obj = this.http.get<UpcomingCarsNew[]>(this.accessPointURL);
+    var obj = this.http.get<any[]>(this.accessPointURL);
     console.log(obj);
-    console.log(obj1);
     return obj;
-    
   }
-  
-  
+  public getcar()
+  {
+    var obj1 = this.http.get(this.accessPointURL1);
+    console.log(obj1);
+    return obj1;
+  }
 
 }
