@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {CarapiconnectService}  from '../../../Service/carapiconnect.service';
+import { LaunchedCars } from 'src/app/Model/LaunchedCars';
 
 @Component({
   selector: 'app-launched',
@@ -6,15 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./launched.component.css']
 })
 export class LaunchedComponent implements OnInit {
+listOfItems: LaunchedCars[];
+accessPointURL="http://localhost:49345/api/featured/GetLaunchedCars";
 
-  listOfItems: any[];
-  selectedItem: any;
-  constructor() {
-    //this.listOfItems = [{name: 'name01'}, {name: 'name02'}, {name: 'name03'},{name: 'name01'}, {name: 'name02'}, {name: 'name03'},{name: 'name01'}, {name: 'name02'}, {name: 'name03'}]
-    this.listOfItems = [{name: 'name01'}, {name: 'name02'}, {name: 'name03'}]
+  constructor(private _carapiconnectservice: CarapiconnectService) {
   }
 
   ngOnInit() {
+    this._carapiconnectservice.getCars(this.accessPointURL).subscribe((launchedcars) =>
+    {
+      this.listOfItems = launchedcars;
+    });
   }
 
 }

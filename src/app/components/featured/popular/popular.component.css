@@ -12,6 +12,12 @@
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
 }
+.ng2-carouselamos {
+    display: -webkit-box !important;
+}
+.mat-card {
+    max-width: 222px !important;
+}
 .card-title{
     display: flex;
     color: #1a1a1a;

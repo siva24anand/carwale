@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {CarapiconnectService} from '../../../Service/carapiconnect.service';
+import { LaunchedCars } from 'src/app/Model/LaunchedCars';
 
 @Component({
   selector: 'app-popular',
@@ -6,14 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./popular.component.css']
 })
 export class PopularComponent implements OnInit {
-  listOfItems: any[];
-  selectedItem: any;
-  constructor() {
-    //this.listOfItems = [{name: 'name01'}, {name: 'name02'}, {name: 'name03'},{name: 'name01'}, {name: 'name02'}, {name: 'name03'},{name: 'name01'}, {name: 'name02'}, {name: 'name03'}]
-    this.listOfItems = [{name: 'name01'}, {name: 'name02'}, {name: 'name03'}]
+  listOfItems: LaunchedCars[];
+  accessPointURL="http://localhost:49345/api/featured/GetPopularCars";
+  
+  constructor(private _carapiconnectService: CarapiconnectService) {
   }
 
   ngOnInit() {
+    this._carapiconnectService.getCars(this.accessPointURL).subscribe((popularcars) =>
+    {
+      this.listOfItems = popularcars;
+    });
   }
 
 }

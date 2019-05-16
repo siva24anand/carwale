@@ -1,8 +1,6 @@
-import { ICars } from './Cars';
+import { FeaturedCars } from './FeaturedCars';
 
-export class UpcomingCars implements ICars{
-    public Name: string;
-    public Price: string;
-    public LaunchDate: string;
-    public ImageURL: string;
+export class UpcomingCars extends FeaturedCars{
+    launchDate:string;
+    estimatedPrice:string;
 }
