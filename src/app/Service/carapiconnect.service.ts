@@ -14,7 +14,6 @@ export class CarapiconnectService {
   public getCars(accessPointURL:string)
   {
     var obj = this.http.get<any[]>(accessPointURL);
-    console.log(obj);
     return obj;
   }
 }

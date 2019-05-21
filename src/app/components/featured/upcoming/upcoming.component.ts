@@ -19,9 +19,7 @@ export class UpcomingComponent implements OnInit {
   ngOnInit() {
     this._carapiconnectService.getCars(this.accessPointURL).subscribe((listOfItemsfromService)  => 
     {
-     console.log(listOfItemsfromService);
      this.listOfItems = listOfItemsfromService;
-      console.log(this.listOfItems);
     });
   }
 
