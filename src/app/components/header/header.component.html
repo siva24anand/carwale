@@ -64,6 +64,11 @@
   </section>
   
   <section class="header-right-section">
+
+      <span *ngIf = "show">
+        <button mat-button id="btnLogout" (click) = "btnLogout()">Logout</button>
+      </span>
+
       <span id="global-place" title="Chennai">Chennai</span>
       <span class="fa fa-map-marker position-abt text-white"></span>
   </section>

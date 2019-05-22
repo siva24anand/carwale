@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 
-
 //For Material
 import { MaterialModule } from '../material-module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -17,6 +16,7 @@ import { UpcomingComponent } from './components/featured/upcoming/upcoming.compo
 import { PopularComponent } from './components/featured/popular/popular.component';
 import { LaunchedComponent } from './components/featured/launched/launched.component';
 import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
 
 //For Http
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
@@ -25,7 +25,7 @@ import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { CarapiconnectService} from './Service/carapiconnect.service';
 
 //For Forms
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 //For Routing
 import { RouterModule } from '@angular/router';
@@ -38,6 +38,9 @@ import { AuthenticationService } from './Service/authentication.service';
 import { httpInterceptor } from './Interceptor/httpInterceptor';
 import { ErrorInterceptor } from './Interceptor/errrorInterceptor';
 
+//Custom Material Module
+import { CustomMaterialModule } from './Core/material.module';
+
 
 @NgModule({
   declarations: [
@@ -48,19 +51,23 @@ import { ErrorInterceptor } from './Interceptor/errrorInterceptor';
     UpcomingComponent,
     PopularComponent,
     LaunchedComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    CustomMaterialModule,
     AppRoutingModule,
     MaterialModule,
     Ng2CarouselamosModule,
+    FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      {path:'home',component: AppComponent, canActivate:[AuthorizationCheck]},
-      {path:'login', component: LoginComponent}
+      {path:'login', component: LoginComponent},
+      {path:'home',component: HomeComponent, canActivate:[AuthorizationCheck]},
+      {path:'',component: AppComponent, canActivate:[AuthorizationCheck]}
     ])
   ],
   providers: [

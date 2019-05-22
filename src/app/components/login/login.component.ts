@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { Route } from '@angular/compiler/src/core';
+import { Router } from '@angular/router';
 import { AuthenticationService } from 'src/app/Service/authentication.service';
 import { first } from 'rxjs/operators';
+import{ FormControl} from '@angular/forms'
 
 @Component({
   selector: 'app-login',
@@ -10,9 +10,11 @@ import { first } from 'rxjs/operators';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  retrurnURL:string;
-  error:'';
+  retrurnURL:string ="/home";
   accesspointURL = 'http://localhost:49345/api/login';
+  username = new FormControl();
+  password = new FormControl();
+  status:string;
   
   constructor(
     private router:Router,
@@ -22,16 +24,14 @@ export class LoginComponent implements OnInit {
         this.authenticationService.logout();
   }
 
-  onLogin(username:string, password: string){
-    this.authenticationService.login(username,password,this.accesspointURL)
+  login(){
+    this.authenticationService.login(this.username.value,this.password.value,this.accesspointURL)
     .pipe(first())
     .subscribe(data=>{
-      console.log(data);
-      //this.router.navigate([this.retrurnURL]);
+      this.router.navigate([this.retrurnURL]);
     },
     error=>{
-      console.log(error);
-      this.error = error;
+      this.status = error;
     });
   }
   
