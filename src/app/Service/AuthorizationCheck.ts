@@ -1,6 +1,5 @@
 import { Injectable } from "@angular/core";
 import { Router,CanActivate , ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
-import { stat } from 'fs';
 
 @Injectable()
 export class AuthorizationCheck implements CanActivate{
