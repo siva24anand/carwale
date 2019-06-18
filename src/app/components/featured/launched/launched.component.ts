@@ -15,8 +15,7 @@ accessPointURL="http://localhost:49345/api/featured/GetLaunchedCars";
   }
 
   ngOnInit() {
-    this._carapiconnectservice.getCars(this.accessPointURL).subscribe((launchedcars) =>
-    {
+    this._carapiconnectservice.getCars(this.accessPointURL).subscribe((launchedcars) =>{
       this.listOfItems = launchedcars;
     });
   }

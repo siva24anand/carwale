@@ -7,17 +7,6 @@ import { MaterialModule } from '../material-module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 
-//For Component
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { BannerComponent } from './components/banner/banner.component';
-import { FeaturedComponent } from './components/featured/featured.component';
-import { UpcomingComponent } from './components/featured/upcoming/upcoming.component';
-import { PopularComponent } from './components/featured/popular/popular.component';
-import { LaunchedComponent } from './components/featured/launched/launched.component';
-import { LoginComponent } from './components/login/login.component';
-import { HomeComponent } from './components/home/home.component';
-
 //For Http
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 
@@ -41,6 +30,23 @@ import { ErrorInterceptor } from './Interceptor/errrorInterceptor';
 //Custom Material Module
 import { CustomMaterialModule } from './Core/material.module';
 
+//For Component
+import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { BannerComponent } from './components/banner/banner.component';
+import { FeaturedComponent } from './components/featured/featured.component';
+import { UpcomingComponent } from './components/featured/upcoming/upcoming.component';
+import { PopularComponent } from './components/featured/popular/popular.component';
+import { LaunchedComponent } from './components/featured/launched/launched.component';
+import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
+import { BrandComponent } from './components/brand/brand.component';
+import { CarComponent } from './components/car/car.component';
+import { VersionComponent } from './components/version/version.component';
+import { LocatorComponent } from './components/SubComponents/locator/locator.component';
+import { CarheaderComponent } from './components/SubComponents/carheader/carheader.component';
+import { CarsectionComponent } from './components/SubComponents/carsection/carsection.component';
+
 
 @NgModule({
   declarations: [
@@ -52,7 +58,13 @@ import { CustomMaterialModule } from './Core/material.module';
     PopularComponent,
     LaunchedComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    BrandComponent,
+    CarComponent,
+    VersionComponent,
+    LocatorComponent,
+    CarheaderComponent,
+    CarsectionComponent
   ],
   imports: [
     BrowserModule,
@@ -67,7 +79,8 @@ import { CustomMaterialModule } from './Core/material.module';
     RouterModule.forRoot([
       {path:'login', component: LoginComponent},
       {path:'home',component: HomeComponent, canActivate:[AuthorizationCheck]},
-      {path:'',component: AppComponent, canActivate:[AuthorizationCheck]}
+      {path:'',component: AppComponent, canActivate:[AuthorizationCheck]},
+      {path:'brand',component:BrandComponent, canActivate:[AuthorizationCheck]}
     ])
   ],
   providers: [

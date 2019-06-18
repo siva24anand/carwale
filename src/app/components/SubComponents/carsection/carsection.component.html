@@ -1,0 +1,20 @@
+<div class="carsectioncontainer">
+  <ul class="carlistheader">
+    <li *ngFor="let car of availableCars" class="carlist">
+
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div class="carimage">
+            <img class="carsectionimage" mat-card-image src={{car.imageURL}} alt={{car.name}}>
+          </div>
+          <div class="cartext">
+            <a class="carnamelink" href="">{{car.name}}</a>
+            <mat-card-title class="mat-card-title"> ₹ {{car.startingPrice}} onwards</mat-card-title>
+            <mat-card-subtitle>On Road Price (incl. GST), Coimbatore</mat-card-subtitle>
+            <button id="btnPricebreakup" class="btnlargered">View Price Breakup</button>
+          </div>
+        </mat-card-header>
+      </mat-card>
+    </li>
+  </ul>
+</div>

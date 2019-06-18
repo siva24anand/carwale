@@ -1,10 +1,12 @@
 .main-banner{
-    background: #000000 url(https://imgd.aeplcdn.com/0x0/n/7i8bv5a_1457171.jpg) no-repeat center bottom;
+    background: #000000 url(https://imgd.aeplcdn.com/0x0/cw/static/landing-banners/home-page-banner-400.jpg?q=85);
+    background-color: #161209;
+    background-repeat: no-repeat;
+    background-position: center top;
     background-size: cover;
-    height: 580px;
+    height: 400px;
+    padding-top: 1px;
     position: relative;
-    text-align: center;
-    color: white;
 }
 .banner-search{
     width: 60%;
@@ -13,6 +15,7 @@
     position: absolute;
     /* top: 10%; */
     left: 20%;
+    margin-top:50px;
 }
 .banner-search h1{
     font-weight: 400;
@@ -44,10 +47,12 @@
     display: flex;
     flex-direction: column;
     /* background-color: grey; */
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     justify-content: center;
     padding-top: 2%;
+    width: 800px;
+    margin-top: 15px;
 }
 .banner-input input{
     width: 55%;
@@ -61,7 +66,6 @@
     border-radius: 0 2px 2px 0;
     text-decoration: none;
     font-size: 16px;
-    text-transform: uppercase;
     color: #fff;
     cursor: pointer;
     border: 1px solid transparent;
@@ -83,4 +87,10 @@
 }
 .banner-link-righttag{
     padding-left: 18%;
+}
+.welcome-box__title{
+    font-weight: 400px;
+    font-size: 35px;
+    color:#fff;
+    text-transform: uppercase;
 }
