@@ -5,11 +5,13 @@
     align-items: center;
     width: 100%;
     background-color: #154057;
+    height: 44px;
 }
 
 .header-title {
     width: 20%;
     height: 25px;
+    margin-left: -25px;
     background: url(http://localhost:49345/api/image/GetBannerImage?name=cvBanner) no-repeat;
 }
 
@@ -17,7 +19,7 @@
     display: flex;
     flex-direction: row;
     justify-content: left;
-    width: 67%;
+    width: 68%;
 }
 
 .nav-tablet-group {

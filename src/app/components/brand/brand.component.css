@@ -1,4 +1,15 @@
 .brandcontainer{
-    width: 950px;
+    width: 75%;
     margin:0 auto;
+}
+.section{
+    display: flex;
+}
+.leftsection{
+width: 65%;
+}
+.rightsection{
+    width:30%;
+    padding-left:2%;
+    padding-top:2%;
 }

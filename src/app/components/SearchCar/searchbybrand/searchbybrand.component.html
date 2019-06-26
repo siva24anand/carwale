@@ -1,0 +1,9 @@
+<div class="brandcontainer">
+    <ul class="brandul">
+      <li *ngFor ="let brand of brandsList" class="brandli">
+        <a [routerLink] = "['/brand']" [queryParams] = "{name:brand}"
+         class="brandlink">{{brand}}</a>
+      </li>
+    </ul>
+</div>
+

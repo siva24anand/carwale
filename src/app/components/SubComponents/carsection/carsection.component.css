@@ -1,52 +1,59 @@
 .carsectioncontainer{
-width: 600px;
-background-color: antiquewhite;
+width: 100%;
 }
 
-.example-card {
-    max-width: 600px;
-    max-height: 300px;
-    height: 150px;
+.carlistheader{
+  margin-left: -7%;
+}
+
+.carlist{
+  list-style-type: none;
+  border: 1px solid transparent;
+}
+
+.car-card {
+  display: flex;
+  background: white;
   }
-  .carsectionimage{
+
+.carsectionimage{
       width: 228px;
       height: 128px;
   }
-  .carnamelink{
+
+ .cartext{
+    margin-left: 2%;
+  }
+  .carprice{
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .statictext{
+    font-size: 14px;
+  }
+
+ .btnlargered{
+    color: #fff;
+    background: #f04031;
+    padding:8px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    border: 1px solid transparent;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.btnlargered:hover{
+  background: #f85649;
+}
+
+.carnamelink{
     text-decoration: none;
     font-weight: 400;
     font-size: 18px;
     margin: 0;
     color: #0288d1;
   }
-  .carnamelink:hover{
+.carnamelink:hover{
     text-decoration: underline;
-  }
-  .mat-card-title{
-    margin-top: 15px !important;
-  }
-  .carimage{
-      margin-left: -25px;
-  }
-  .cartext{
-      margin-left: 30px;
-  }
-  .btnlargered{
-      color: #fff;
-      background: #f04031;
-      padding:8px;
-      cursor: pointer;
-      font-size: 16px;
-      display: inline-block;
-      border: 1px solid transparent;
-  }
-  .btnlargered:hover{
-    background: #f85649;
-  }
-  .carlistheader{
-    margin-left: -40px;
-  }
-  .carlist{
-    list-style-type: none;
-    border: .5px solid transparent;
   }

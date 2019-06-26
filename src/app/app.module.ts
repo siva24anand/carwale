@@ -46,6 +46,15 @@ import { VersionComponent } from './components/version/version.component';
 import { LocatorComponent } from './components/SubComponents/locator/locator.component';
 import { CarheaderComponent } from './components/SubComponents/carheader/carheader.component';
 import { CarsectionComponent } from './components/SubComponents/carsection/carsection.component';
+import { CarsearchComponent } from './components/SearchCar/carsearch/carsearch.component';
+import { SearchbybrandComponent } from './components/SearchCar/searchbybrand/searchbybrand.component';
+import { SearchbyemibudgetComponent } from './components/SearchCar/searchbyemibudget/searchbyemibudget.component';
+import { SearchbybodytypeComponent } from './components/SearchCar/searchbybodytype/searchbybodytype.component';
+import { SearchbyfueltypeComponent } from './components/SearchCar/searchbyfueltype/searchbyfueltype.component';
+import { AdvsmallComponent } from './components/Ads/advsmall/advsmall.component';
+import { AdvlargeComponent } from './components/Ads/advlarge/advlarge.component';
+import { AdhlargeComponent } from './components/Ads/adhlarge/adhlarge.component';
+import { LocatedealerComponent } from './components/locatedealer/locatedealer.component';
 
 
 @NgModule({
@@ -64,7 +73,16 @@ import { CarsectionComponent } from './components/SubComponents/carsection/carse
     VersionComponent,
     LocatorComponent,
     CarheaderComponent,
-    CarsectionComponent
+    CarsectionComponent,
+    CarsearchComponent,
+    SearchbybrandComponent,
+    SearchbyemibudgetComponent,
+    SearchbybodytypeComponent,
+    SearchbyfueltypeComponent,
+    AdvsmallComponent,
+    AdvlargeComponent,
+    AdhlargeComponent,
+    LocatedealerComponent
   ],
   imports: [
     BrowserModule,

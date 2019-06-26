@@ -1,0 +1,8 @@
+.adcontainer{
+    width: 100%;
+    min-height: 250px;
+    /* border: .5px solid gray; */
+}
+.adimage{
+    width: 100%;
+}

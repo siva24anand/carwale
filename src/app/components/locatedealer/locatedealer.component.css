@@ -1,0 +1,55 @@
+.locateContainer{
+background:white;
+display: flex;
+}
+.locateleft{
+    background: #565a5c;
+    width: 15%;
+    height: 90px;
+    border-radius: 50%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.locateright{
+    width: 85%;
+}
+.bannerimage{
+    width: 41%;
+    height: 60%;
+    margin-left: 32%;
+    margin-top:10%;
+    background: url(http://localhost:49345/api/image/GetBannerImage?name=cvBanner) no-repeat;
+    background-position: -107px -26px;
+}
+.locateheader{
+    font-size: 23px;
+    font-weight: 400;
+    margin-left: 10%;
+    color: #82888b;
+}
+.locateflex{
+margin-left: 10%;
+display: flex;
+}
+.dropdown{
+    margin: 1%;
+    padding: 8px 13px;
+    width: 60%;
+}
+.locateatag{
+    margin: 1%;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #f5f5f5;
+    color: #82888b;
+    border:1px solid #ccc;
+    cursor: pointer;
+    padding: 8px 13px;
+    width: 20%;
+    text-align: center;
+}
+.locateatag:hover{
+    background: #f04031;
+    color: #fff;
+    border: 1px solid #f04031
+}

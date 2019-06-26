@@ -59,7 +59,7 @@
     position: absolute;
     top: -30px;
     z-index: 1;
-    left: 28px;
+    left: -2px;
 }
 .carous-prev{
     background:url(https://imgd.aeplcdn.com/0x0/cw/static/sprites/cwsprite.png?201703071717247120) no-repeat;
@@ -78,7 +78,7 @@
     position: absolute;
     top: -30px;
     z-index: 1;
-    right: 27px;
+    right: 14px;
 }
 .carous-next{
     background:url(https://imgd.aeplcdn.com/0x0/cw/static/sprites/cwsprite.png?201703071717247120) no-repeat;

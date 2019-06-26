@@ -1,0 +1,7 @@
+.carsearchcontainer{
+    display: flex;
+    justify-content: center;
+}
+.mat-tab-header-pagination-controls-enabled .mat-tab-header-pagination {
+    display: none !important;
+}

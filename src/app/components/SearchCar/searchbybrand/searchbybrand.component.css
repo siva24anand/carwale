@@ -1,0 +1,20 @@
+.brandcontainer{
+
+}
+.brandul{
+    display: block;
+    list-style: none;
+}
+.brandli{
+    display: inline-block;
+    width: 140px;
+    height: 20px;
+    margin: 0 5px 40px;
+}
+.brandlink{
+    text-decoration: none;
+    color: #0288d1;
+    cursor: pointer;
+    margin-top: 7px;
+    font-size: 14px;
+}
