@@ -4,7 +4,7 @@
       <div class="car-card">
         <img class="carsectionimage" src={{car.imageURL}} alt={{car.name}}>
         <div class="cartext">
-          <a href="" class="carnamelink">{{car.name}}</a>
+          <a [routerLink] ="['/car']" [queryParams] = {name:car.name} class="carnamelink">{{car.name}}</a>
           <div><span class="carprice"></span> ₹ {{car.startingPrice}}<span class="statictext"> onwards</span></div>
           <div class="statictext">On Road Price (incl. GST), Coimbatore</div>
           <button id="btnPricebreakup" class="btnlargered">View Price Breakup</button>

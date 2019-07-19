@@ -1,0 +1,16 @@
+.carcontainer{
+    width: 75%;
+    /* background-color:antiquewhite; */
+    margin:0 auto;
+}
+.section{
+    display: flex;
+}
+.leftsection{
+    width: 65%;
+}
+.rightsection{
+    width: 30%;
+    padding-left: 2%;
+    padding-right: 2%;
+}

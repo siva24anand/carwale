@@ -20,6 +20,7 @@
     flex-direction: row;
     justify-content: left;
     width: 68%;
+    white-space: nowrap;
 }
 
 .nav-tablet-group {
@@ -31,6 +32,7 @@
 .nav-tablet {
     list-style: none;
     padding: 10px;
+    white-space: nowrap;
 }
 
 .nav-tablet > span{

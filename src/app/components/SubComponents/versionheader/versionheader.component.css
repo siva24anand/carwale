@@ -1,0 +1,17 @@
+.header{
+    font-size: 30px;
+    font-weight: 500;
+}
+.reviewcontainer{
+    margin-top:5px;
+}
+.reviewspan{
+    margin-left: 5px;
+}
+.reviewlink{
+    text-decoration: none;
+    color: #0288d1;
+}
+.reviewlink:hover{
+    text-decoration: underline;
+}

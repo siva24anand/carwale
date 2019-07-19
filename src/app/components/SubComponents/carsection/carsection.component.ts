@@ -19,7 +19,7 @@ export class CarsectionComponent implements OnInit {
     this.route.queryParams.subscribe((params) => {
       this.carName = params.name;
       this._carapiconnectservice.getCars(this.accessPointURL).subscribe((availableCars) => {
-        this.availableCars = availableCars.filter(a => a.brand == this.carName)
+        this.availableCars = availableCars.filter(a => a.brand.name == this.carName)
       });
     });
   }

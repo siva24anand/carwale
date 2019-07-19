@@ -55,6 +55,8 @@ import { AdvsmallComponent } from './components/Ads/advsmall/advsmall.component'
 import { AdvlargeComponent } from './components/Ads/advlarge/advlarge.component';
 import { AdhlargeComponent } from './components/Ads/adhlarge/adhlarge.component';
 import { LocatedealerComponent } from './components/locatedealer/locatedealer.component';
+import { VersionheaderComponent } from './components/SubComponents/versionheader/versionheader.component';
+import { CarmenuComponent } from './components/SubComponents/carmenu/carmenu.component';
 
 
 @NgModule({
@@ -82,7 +84,9 @@ import { LocatedealerComponent } from './components/locatedealer/locatedealer.co
     AdvsmallComponent,
     AdvlargeComponent,
     AdhlargeComponent,
-    LocatedealerComponent
+    LocatedealerComponent,
+    VersionheaderComponent,
+    CarmenuComponent
   ],
   imports: [
     BrowserModule,
@@ -98,7 +102,8 @@ import { LocatedealerComponent } from './components/locatedealer/locatedealer.co
       {path:'login', component: LoginComponent},
       {path:'home',component: HomeComponent, canActivate:[AuthorizationCheck]},
       {path:'',component: AppComponent, canActivate:[AuthorizationCheck]},
-      {path:'brand',component:BrandComponent, canActivate:[AuthorizationCheck]}
+      {path:'brand',component:BrandComponent, canActivate:[AuthorizationCheck]},
+      {path:'car', component:CarComponent,canActivate:[AuthorizationCheck]}
     ])
   ],
   providers: [
